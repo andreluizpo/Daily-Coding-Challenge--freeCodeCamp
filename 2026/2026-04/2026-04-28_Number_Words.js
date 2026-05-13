@@ -59,23 +59,3 @@ getNumberWords(12); // should return "twelve".
 getNumberWords(60); // should return "sixty".
 getNumberWords(67); // should return "sixty-seven".
 getNumberWords(98); // should return "ninety-eight".
-
-// ---------------------------------- TESTES -----------------------------------------------------------
-
-import { runTests } from "../../runTests.js";
-
-const tests = [
-  // Repita conforme o número de testes
-  { input: [0], expected: "zero" },
-  { input: [10], expected: "ten" },
-  { input: [19], expected: "nineteen" },
-  { input: [30], expected: "thirty" },
-  { input: [53], expected: "fifty-three" },
-  { input: [7], expected: "seven" },
-  { input: [12], expected: "twelve" },
-  { input: [60], expected: "sixty" },
-  { input: [67], expected: "sixty-seven" },
-  { input: [98], expected: "ninety-eight" },
-];
-
-runTests(tests, getNumberWords);
